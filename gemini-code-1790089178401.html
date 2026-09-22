@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataBabu - Instant AI CSV & Excel Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">Data<span>Babu</span></div>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#upload" class="nav-btn">Try Now</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Transform CSV & Excel Files into <br><span>Instant Smart Summaries</span></h1>
+        <p>Bas apni file upload karein aur AI se automatic insights, key metrics, aur charts paayein kuch hi seconds mein.</p>
+        
+        <!-- File Upload Card -->
+        <div class="upload-card" id="upload">
+            <div class="drop-zone" id="dropZone">
+                <div class="upload-icon">📊</div>
+                <h3>Drag & Drop your Excel or CSV file here</h3>
+                <p>Supports .xlsx, .xls, .csv (Max size 25MB)</p>
+                <input type="file" id="fileInput" accept=".csv, .xlsx, .xls" hidden>
+                <button class="browse-btn" onclick="document.getElementById('fileInput').click()">Browse File</button>
+            </div>
+            <div id="fileInfo" class="file-info"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Kyun Choose Karein DataBabu?</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Super Fast Analysis</h3>
+                <p>Hazaaron rows ka data seconds mein summarize karein bina kisi manual formula ke.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🧠</div>
+                <h3>Smart AI Insights</h3>
+                <p>Important trends, high values, aur data anomalies ko AI automatic highlight karta hai.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔒</div>
+                <h3>100% Secure & Private</h3>
+                <p>Aapka data completely encrypted hai. Hum aapka sensitive data kabhi store nahi karte.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 DataBabu. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
